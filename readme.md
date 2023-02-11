@@ -10,7 +10,7 @@ You can download the dataset from Amazon Product by running the following script
 ```
 sh download_data.sh
 ```
-Then put these downloaded and unzipped files in the **data/** folder. After download the dataset, running the following dataset preprocessing scripts, and you will obtain the preprocessed data including the splitted train, valid adn test set in the **preprocess_data/** folder.
+Create a folder named **data** and **preprocess_data/**, and then put these downloaded and unzipped files in the **data/** folder. After download the dataset, running the following dataset preprocessing scripts, and you will obtain the preprocessed data including the splitted train, valid adn test set in the **preprocess_data/** folder.
 ```
 python data_split.py
 python feature_process.py
@@ -39,6 +39,7 @@ Additionally, if you want to run some of the baselines or tune hyperparameters, 
 ## Lower and Upper Optimization
     + lower update: In line 310 - line 341 in train.py.
     + upper update: In line 343 - line 406 in train.py. Note we use an additional target head(replace_pred in the conet_model) to calculate the upper gradient instead of the original target head, to prevent the upper optimization only focusing on the target domain as indicated in the paper "SHOULD WE BE Pre-TRAINING? EXPLORING END-TASK AWARE TRAINING IN LIEU OFCONTINUED PRE-TRAINING". Therefore, we will conduct the meta optimization in line 343 to optimize this additional target head. 
+    + perceptron: Implemented in the auxilearn/hypernet.py
 
 
 Please kindly cite our paper if you find it useful, where the bib will be updated after the conference.
