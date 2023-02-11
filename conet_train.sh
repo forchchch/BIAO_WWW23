@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=2 python train.py --exp_name reproduce_conet_booktoy_ours
