@@ -10,7 +10,7 @@ You can download the dataset from Amazon Product by running the following script
 ```
 sh download_data.sh
 ```
-Create a folder named **data** and **preprocess_data/**, and then put these downloaded and unzipped files in the **data/** folder. After download the dataset, running the following dataset preprocessing scripts, and you will obtain the preprocessed data including the splitted train, valid adn test set in the **preprocess_data/** folder.
+Create a folder named **data** and **preprocess_data/**, and then put these downloaded and unzipped files in the **data/** folder. After download the dataset, running the following dataset preprocessing scripts, and you will obtain the preprocessed data including the splitted train, valid and test set in the **preprocess_data/** folder.
 ```
 python data_split.py
 python feature_process.py
@@ -42,7 +42,7 @@ Additionally, if you want to run some of the baselines or tune hyperparameters, 
     + perceptron: Implemented in the auxilearn/hypernet.py
 
 We observe subtle performance variances with different hardware devices even when we fix all the ramdom variables. Additionally, the learned weights will be different if you choose different backbones. For example, MiNet and CoNet will
-have different learned sample weights.
+have different learned sample weights. Also, the bi-level optimization will suffer overfitting, so the early-stop strategy should be adopted.
 
 Please kindly cite our paper if you find it useful, where the bib will be updated after the conference.
 
