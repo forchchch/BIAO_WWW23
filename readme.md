@@ -44,7 +44,7 @@ Additionally, if you want to run some of the baselines or tune hyperparameters, 
 We observe subtle performance variances with different hardware devices even when we fix all the ramdom variables. Additionally, the learned weights will be different if you choose different backbones. For example, MiNet and CoNet will
 have different learned sample weights. Also, the bi-level optimization will suffer overfitting, so the early-stop strategy should be adopted. Additionally, if you want the method work for other backbones and datasets, the hyper-parameters should be tuned accordingly.
 
-Please kindly cite our paper if you find it useful, where the bib will be updated after the conference.
+Please kindly cite our paper if you find it useful.
 
 ## Citation
 ```bib
