@@ -49,9 +49,10 @@ Please kindly cite our paper if you find it useful.
 ## Citation
 ```bib
 @inproceedings{chen2023cross,
-  title={Cross-domain Recommendation with Behavioral Importance Perceptron},
+  title={Cross-domain recommendation with behavioral importance perception},
   author={Chen, Hong and Wang, Xin and Xie, Ruobing and Zhou, Yuwei and Zhu, Wenwu},
   booktitle={Proceedings of the ACM Web Conference 2023},
+  pages={1294--1304},
   year={2023}
 }
 ```
