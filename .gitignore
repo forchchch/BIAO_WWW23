@@ -1,0 +1,5 @@
+conet_record/
+data/*.json
+preprocess_data/*.json
+preprocess_data/*.csv
+__pycache__/
